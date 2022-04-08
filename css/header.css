@@ -1,0 +1,46 @@
+#preamble {
+	max-width: var(--genwidth);
+	margin: auto;
+}
+nav {
+	background: var(--altbg);
+	border-radius: 15px;
+	border: dashed 1px var(--bordercolor);
+
+	text-align: center;
+	clear: both;
+	vertical-align: middle;
+	padding: 0px;
+}
+a {
+	color: #36f433;
+}
+a li img {
+	max-height: 1em;
+	max-width: 1em;
+	vertical-align: middle;
+}
+
+nav ul.header {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+nav a:hover li, #tagcloud a:hover li {
+	background: steelblue ;
+	color: black ;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	background: var(--bg);
+	border-radius: 10px;
+	padding: 8px;
+	max-width: 7em;
+}

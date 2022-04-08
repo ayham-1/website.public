@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Library</title>
+<meta name="description" content="Ayham's Website" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel=stylesheet href="https://ayham.xyz/css/common.css" /><link rel=stylesheet href="https://ayham.xyz/css/header.css" /><link rel="shortcut icon" href="https://ayham.xyz/pix/pfp.ico">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="Ayham's Online Website">
+</head>
+<body>
+<div id="preamble" class="status">
+<nav>
+	<ul class=header>
+		<a class="viewer" href="https://ayham.xyz"><li>
+			🏠 Home</li>
+		</a>
+		<a href="https://store.ayham.xyz"><li>
+			🏪 Store</li>
+		</a>
+		<a href="https://tildegit.org/ayham"><li>
+			<img src="https://ayham.xyz/pix/git.svg" alt="git logo">
+			Git</li>
+		</a>
+		<a href="https://ayham.xyz/projects.html"><li>
+			⚙️ Projects</li>
+		</a>
+		<a href="https://ayham.xyz/blog/index.html"><li>
+			📜 Articles</li>
+		</a>
+		<a href="https://ayham.xyz/workflow.html"><li>
+			💻 Workflow</li>
+		</a>
+		<a href="https://ayham.xyz/library.html"><li>
+			📚 Library</li>
+		</a>
+		<a href="https://ayham.xyz/contact.html"><li>
+			📧 Contact</li>
+		</a>
+	</ul>
+</nav>
+<br>
+</div>
+<div id="content" class="content">
+<h1 class="title">Library</h1>
+<p>
+List of books I read, not a recommendation list nor endorsement.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.amazon.com/Think-Like-Mathematician-Language-Patterns-ebook/dp/B08Z6NRPK5/ref=sr_1_1?crid=Y1YZ2JI3KBCR&amp;keywords=anne+rooney+think+like+a+mathematician&amp;qid=1647532300&amp;sprefix=anne+rooney+think+like+a+mathematicia%2Caps%2C314&amp;sr=8-1">Anne Rooney - Think Like A Mathematician</a></li>
+<li><a href="https://www.amazon.com/Tale-Cities-Dover-Thrift-Study/dp/0486475689/ref=sr_1_2?crid=2QPRNQ3P6UJAO&amp;keywords=a+tale+of+two+cities+dover+thrift+edition&amp;qid=1643214147&amp;sprefix=a+tale+of+two+cities+dover+thrift+edition%2Caps%2C271&amp;sr=8-2">Charles Darwin - A Tale Of Two Cities</a></li>
+<li><a href="https://www.amazon.com/Dr-Faustus-Dover-Thrift-Editions/dp/0486282082/ref=sr_1_1?keywords=Dr+faustus&amp;qid=1639966794&amp;sr=8-1">Christopher Marlowe - Dr. Faustus</a></li>
+<li><a href="https://www.amazon.com/Winter-Our-Discontent-Penguin-Classics-ebook/dp/B001DUGOWY/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=1635793939&amp;sr=8-1">John Steinback - The Winter of Our Discontent</a></li>
+<li><a href="https://www.amazon.com/Mice-Men-John-Steinbeck/dp/0140177396/ref=sr_1_1?dchild=1&amp;keywords=of+mice+and+men&amp;qid=1632044039&amp;sr=8-1">John Steinback - Of Mice and Men</a></li>
+<li><a href="https://www.amazon.com/Politically-Incorrect-Guide-Capitalism/dp/1596985046/ref=sr_1_1?dchild=1&amp;keywords=the+politically+incorrect+guide+to+capitalism&amp;qid=1631956896&amp;sr=8-1">Ph.d.  Robert P. Murphy - The Politically Incorrect Guide to Capitalism</a></li>
+<li><a href="https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/ref=sr_1_1?dchild=1&amp;keywords=george+orwell+animal+farm&amp;qid=1631951511&amp;sr=8-1">George Orwell - Animal Farm</a></li>
+<li><a href="https://www.amazon.com/Skin-in-Game-audiobook/dp/B077BSK9LC/ref=sr_1_1?dchild=1&amp;keywords=nassim+taleb+skin+in+the+game&amp;qid=1631951583&amp;sr=8-1">Nassim Nicholas Taleb - Skin in the Game</a></li>
+<li><a href="https://www.amazon.com/Mystery-Consciousness-John-R-Searle/dp/0940322064/ref=sr_1_1?dchild=1&amp;keywords=John+R.+Searle+-+The+Mystery+of+Consciousness&amp;qid=1631951639&amp;s=audible&amp;sr=1-1">John R. Searle - The Mystery of Consciousness</a></li>
+<li><a href="https://www.amazon.com/Dumbest-Generation-Stupefies-Americans-Jeopardizes/dp/1585427128/ref=sr_1_1?dchild=1&amp;keywords=Mark+Bauerlein+-+The+Dumbest+Generation&amp;qid=1631951709&amp;sr=8-1">Mark Bauerlein - The Dumbest Generation</a></li>
+<li><a href="https://www.amazon.com/Accidental-Theorist-Dispatches-Dismal-Science/dp/0393318877/ref=sr_1_1?dchild=1&amp;keywords=Paul+Krugman+-+The+Accidental+Theorist+and+Other+Dispatches+From+the+Dismal+Science&amp;qid=1631951747&amp;sr=8-1">Paul Krugman - The Accidental Theorist and Other Dispatches From the Dismal Science</a></li>
+<li><a href="https://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934/ref=sr_1_1?dchild=1&amp;keywords=George+Orwell+-+1984&amp;qid=1631951770&amp;sr=8-1">George Orwell - 1984</a></li>
+<li><a href="https://www.amazon.com/First-Little-Book-Intersectional-Activism-ebook/dp/B083158WFX/ref=sr_1_1?dchild=1&amp;keywords=Titania+McGrath+-+My+First+Little+Book+of+Intersectional+Activism&amp;qid=1631951804&amp;sr=8-1">Titania McGrath - My First Little Book of Intersectional Activism</a></li>
+<li><a href="https://www.amazon.com/Woke-Social-Justice-Titania-McGrath-ebook/dp/B07PLN1L8G/ref=sr_1_1?dchild=1&amp;keywords=Titania+McGrath+-+Woke%3A+A+Guide+to+Social+Justice&amp;qid=1631951830&amp;sr=8-1">Titania McGrath - Woke: A Guide to Social Justice</a></li>
+<li><a href="https://www.amazon.com/Fahrenheit-451-Ray-Bradbury/dp/1451673310/ref=sr_1_1?dchild=1&amp;keywords=Ray+Bradbury+-+Fahrenheit+451&amp;qid=1631951845&amp;sr=8-1">Ray Bradbury - Fahrenheit 451</a></li>
+<li><a href="https://www.amazon.com/Mans-Search-Meaning-Revised-updated/dp/0671646702/ref=sr_1_1?dchild=1&amp;keywords=Viktor+Emil+Frankl+-+Man%27s+Search+for+Meaning&amp;qid=1631951880&amp;sr=8-1">Viktor Emil Frankl - Man's Search for Meaning</a></li>
+<li><a href="https://www.amazon.com/Future-War-Preparing-Global-Battlefield/dp/1101947608/ref=sr_1_1?dchild=1&amp;keywords=Robert+H.+Latiff+-+Future+War%3A+Preparing+for+the+New+Global+Battlefield&amp;qid=1631951928&amp;sr=8-1">Robert H. Latiff - Future War: Preparing for the New Global Battlefield</a></li>
+<li><a href="https://www.amazon.com/Free-Speech-Matters-Andrew-Doyle-ebook/dp/B08P1JW2W5/ref=sr_1_1?dchild=1&amp;keywords=Andrew+Doyle+-+Free+Speech+and+Why+It+Matters&amp;qid=1631951952&amp;sr=8-1">Andrew Doyle - Free Speech and Why It Matters</a></li>
+<li><a href="https://www.amazon.com/Coddling-of-American-Mind-audiobook/dp/B079P7PDWB/ref=sr_1_1?dchild=1&amp;keywords=Greg+Lukianoff%2C+Jonathan+Haidt+-+The+Coddling+of+the+American+Mind&amp;qid=1631951974&amp;sr=8-1">Greg Lukianoff, Jonathan Haidt - The Coddling of the American Mind</a></li>
+<li><a href="https://www.amazon.com/Republic-Hackett-Classics-Plato/dp/0872201368/ref=sr_1_1?dchild=1&amp;keywords=Plato+-+Republic&amp;qid=1631952018&amp;sr=8-1">Plato - Republic</a></li>
+<li><a href="https://www.amazon.com/Beyond-Freedom-Dignity-Hackett-Classics/dp/0872206270/ref=sr_1_1?dchild=1&amp;keywords=B.F.+Skinner+-+Beyond+Freedom+and+Dignity&amp;qid=1631952045&amp;sr=8-1">B.F. Skinner - Beyond Freedom and Dignity</a></li>
+<li><a href="https://www.amazon.com/Myth-Rational-Voter-Democracies-Policies/dp/0691138737/ref=sr_1_1?dchild=1&amp;keywords=Bryan+Caplan+-+The+Myth+of+the+Rational+Voter&amp;qid=1631952139&amp;sr=8-1">Bryan Caplan - The Myth of the Rational Voter</a></li>
+<li><a href="https://www.amazon.com/Crime-Punishment-Wordsworth-Classics-Dostoevsky/dp/1840224304/ref=pd_vtp_6/147-4768544-2493866?pd_rd_w=b78Hm&amp;pf_rd_p=016e3697-91be-4dc2-9533-ef9350e7e73d&amp;pf_rd_r=0KMJRJBSYRV46XGP320D&amp;pd_rd_r=ca858268-6089-4efe-a915-6591b97f6cbf&amp;pd_rd_wg=6gYpk&amp;pd_rd_i=1840224304&amp;psc=1">Fyodor Dystovysky - Crime and Punishment</a></li>
+<li><a href="https://www.amazon.com/Explaining-Postmodernism-Expanded-Skepticism-Socialism/dp/B07JVJC55G/ref=sr_1_1?dchild=1&amp;keywords=Stephen+R.C.+Hicks+-+Explaining+Post-Modernism&amp;qid=1631952202&amp;s=books&amp;sr=1-1">Stephen R.C. Hicks - Explaining Post-Modernism</a></li>
+<li><a href="https://www.amazon.com/12-Rules-for-Life-audiobook/dp/B0797Y87JC/ref=sr_1_1?dchild=1&amp;keywords=Jordan+B.+Peterson+-+12+Rules+For+Life&amp;qid=1631952227&amp;s=audible&amp;sr=1-1">Jordan B. Peterson - 12 Rules For Life</a></li>
+<li><a href="https://www.amazon.com/Arguments-Deleting-Social-Media-Accounts/dp/B07CX579TC/ref=sr_1_1?dchild=1&amp;keywords=Jaron+Lanier+-+Ten+Arguments+For+Deleting+Your+Social+Media+Accounts+Right+Now&amp;qid=1631952257&amp;s=audible&amp;sr=1-1">Jaron Lanier - Ten Arguments For Deleting Your Social Media Accounts Right Now</a></li>
+<li><a href="https://www.amazon.com/The-Economics-Book-DK-audiobook/dp/B07KGH22LL/ref=sr_1_1?dchild=1&amp;keywords=DK+-+The+Economics+Books&amp;qid=1631952287&amp;s=audible&amp;sr=1-1">DK - The Economics Books</a></li>
+<li><a href="https://www.amazon.com/The-Sublime-Object-of-Ideology/dp/B08T25Q611/ref=sr_1_1?dchild=1&amp;keywords=Slavoj+Zizek+-+The+Sublime+Object+of+Ideology&amp;qid=1631952309&amp;s=audible&amp;sr=1-1">Slavoj Zizek - The Sublime Object of Ideology</a></li>
+<li><a href="https://www.amazon.com/The-Godfather-audiobook/dp/B007JSDY7W/ref=sr_1_1?dchild=1&amp;keywords=Mario+Puzo+-+The+Godfather&amp;qid=1631952345&amp;s=audible&amp;sr=1-1">Mario Puzo - The Godfather</a></li>
+<li><a href="https://www.amazon.com/End-Gender-Debunking-Identity-Society/dp/B086LJXLZN/ref=sr_1_1?dchild=1&amp;keywords=Debra+Soh+-+The+End+of+Gender%3A+Debunking+the+Myths+About+Sex+and+Identity+in+Our+Society&amp;qid=1631952377&amp;s=audible&amp;sr=1-1">Debra Soh - The End of Gender: Debunking the Myths About Sex and Identity in Our Society</a></li>
+</ul>
+
+<div id="outline-container-org0671c5d" class="outline-2">
+<h2 id="org0671c5d">Any recommendations?</h2>
+<div class="outline-text-2" id="text-org0671c5d">
+<p>
+If you have any books you would like to recommend,
+contact me <a href="https://contact.ayham.xyz">here</a>.<br />
+(P.S. "red-pilled" books are especially welcomed).
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer>
+  <div class="generated">
+	Created with <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2) on <a href="https://www.gnu.org">GNU</a>/<a href="https://www.kernel.org/">Linux</a>
+  </div>
+  <br/>
+  <center id=webpins>Unique Users:
+	<a href="https://www.digits.net" target="_blank" rel=noopener>
+	<img src="https://counter.digits.net/?counter={f115c91c-b3dd-7584-456b-e7a9e52faa74}&template=simple" alt="Hit Counter by Digits" border=0  /></a>
+	<br/>
+	<br/>
+	<a href="https://ayham.xyz">
+	<img width=88 height=31 src="https://ayham.xyz/pix/webpins/ayhamxyz.gif" alt="ayham.xyz webpin"></a>
+  </center>
+</footer>
+</div>
+</body>
+</html>

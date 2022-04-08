@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+ <loc>https://ayham.xyz/app/eid/app.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/app/eid/index.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/a-minimal-linux-display-manager.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/blogit-to-blog-it.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/first-article.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/hardening-the-one-macro.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/index.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/install-ayhamxyz-pwa.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/morality-of-pursuing-money-an-essay.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/blog/true-full-disk-encryption.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/store/index.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/contact.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/index.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/library.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/projects.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://ayham.xyz/workflow.html</loc>
+ <priority>0.5</priority>
+</url>
+</urlset>

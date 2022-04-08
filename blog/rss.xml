@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Ayham's Articles</title>
+  <atom:link href="https://blog.ayham.xyz/rss.xml" rel="self" type="application/rss+xml" />
+  <link>https://blog.ayham.xyz</link>
+  <description><![CDATA[yes, a blog]]></description>
+  <language>en</language>
+  <pubDate>Fri, 08 Apr 2022 08:32:35 +0300</pubDate>
+  <lastBuildDate>Fri, 08 Apr 2022 08:32:35 +0300</lastBuildDate>
+  <generator>Emacs 28.1 Org-mode 9.5.2</generator>
+  <webMaster>ayham@xyz (ayham)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Ayham's Articles</title>
+    <link>https://blog.ayham.xyz</link>
+  </image>
+
+
+  <item>
+    <title>The Morality Of Pursuing Money: An Essay</title>
+    <link>https://blog.ayham.xyz/morality-of-pursuing-money-an-essay.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/morality-of-pursuing-money-an-essay.html</guid>
+    <pubDate>Thu, 31 Mar 2022 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>A Minimal Linux Display Manager</title>
+    <link>https://blog.ayham.xyz/a-minimal-linux-display-manager.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/a-minimal-linux-display-manager.html</guid>
+    <pubDate>Tue, 28 Dec 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>My site is Now Installable as a Web App!</title>
+    <link>https://blog.ayham.xyz/install-ayhamxyz-pwa.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/install-ayhamxyz-pwa.html</guid>
+    <pubDate>Fri, 17 Dec 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>True Full Disk Encryption On Linux</title>
+    <link>https://blog.ayham.xyz/true-full-disk-encryption.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/true-full-disk-encryption.html</guid>
+    <pubDate>Fri, 10 Dec 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Hardening the Moto One Macro</title>
+    <link>https://blog.ayham.xyz/hardening-the-one-macro.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/hardening-the-one-macro.html</guid>
+    <pubDate>Tue, 30 Nov 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>blogit: A Complete Guide</title>
+    <link>https://blog.ayham.xyz/blogit-to-blog-it.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/blogit-to-blog-it.html</guid>
+    <pubDate>Fri, 26 Nov 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>The Beginning of a series!</title>
+    <link>https://blog.ayham.xyz/first-article.html</link>
+    <author>ayham@xyz (ayham)</author>
+    <guid isPermaLink="false">https://blog.ayham.xyz/first-article.html</guid>
+    <pubDate>Fri, 01 Oct 2021 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+</channel>
+</rss>
